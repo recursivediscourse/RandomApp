@@ -27,3 +27,7 @@ Inside of bash scripts, you should have:
 - `set -o pipefail` which will show the exit status of the last command that threw a non-zero exit code is returned
 
 The `.gitignore` file makes sure the `bin` directory does not get tracked.
+
+The `bin` directory is probably unecessary, as you will build the go app inside the container.
+
+If VS code stops tracking the import paths for go, just restart it. It seems to cache stuff poorly.
