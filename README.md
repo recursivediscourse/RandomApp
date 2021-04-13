@@ -19,6 +19,11 @@ To run docker image, run:
 ```
 docker run <name you called it>
 ```
+The recommended way of running it is like so:
+```
+docker run -it -p <outsideport>:<insideport> <name you called it>
+```
+That gives you an interactive terminal, and thus allows you to Ctrl-C out.
 
 Inside of bash scripts, you should have:
 - `#! /bin/sh`
